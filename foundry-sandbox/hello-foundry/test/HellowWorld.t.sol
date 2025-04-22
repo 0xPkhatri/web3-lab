@@ -14,5 +14,4 @@ contract HelloWorldTest is Test {
     function test_HelloWorld() public {
         assertEq(helloworld.myString(), "My string");
     }
-
 }

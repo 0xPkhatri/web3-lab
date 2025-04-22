@@ -19,12 +19,13 @@ contract CounterTest is Test {
     function testRevertWhenDecUnderflows() public {
         vm.expectRevert();
         counter.dec();
-         }
+    }
 
-        function testDecUnderflow() public {
-            vm.expectRevert(stdError.arithmeticError);
-            counter.dec();
-        }
+    function testDecUnderflow() public {
+        vm.expectRevert(stdError.arithmeticError);
+        counter.dec();
+    }
+
     function testDec() public {
         counter.inc();
         counter.inc();
